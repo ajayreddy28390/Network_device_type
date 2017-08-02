@@ -1,8 +1,5 @@
 import paramiko
 import time,json
-#from netmiko import ConnectHandler
-#from netmiko.ssh_exception import NetMikoTimeoutException, NetMikoAuthenticationException
-#import socket
 import sys, re
 import xmltodict,ipaddress
 global remote_conn_pre,remote_conn
@@ -133,8 +130,8 @@ def ip2devicemgmtip(ip):
 def main():
     global output, device_type
     ip_address = "159.125.43.156"
-    mc_ip ="224.0.52.4"
-    route_instance =""
+    #mc_ip ="224.0.52.4"
+    #route_instance =""
     devicename = ip2devicemgmtip(ip_address)
     if devicename != None:
         print ("Device with IP in search:"+devicename)
